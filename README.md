@@ -19,6 +19,11 @@ composer global require "fxp/composer-asset-plugin:^1.2.0"
 composer install -vvv
 php yii migrate
 ```
+Ubah pengaturan akses url api dan token `client-side\config\params.php`:
+```
+http://localhost/server-side/api/public_html/v1/
+```
+
 Sekarang kamu sudah bisa mengakses aplikasi menggunakan url :
 ```
 http://localhost/client-side/public_html
@@ -27,7 +32,7 @@ http://localhost/client-side/public_html
 ### Menu yang tersedia
 - Repository & history repository : SCRUD (Search, Create, Read, Update, Delete, Sorting) tanpa REST
 - Third party services menggunakan S3 Amazon Servies
-- Akses login, signup, ubah akun dan password, hapus user menggunakan REST dari aplikasi(`https://github.com/m-alfan/test-serverside.git`)
+- Akses login, signup, ubah akun dan password, hapus user menggunakan REST dari source [`https://github.com/m-alfan/test-serverside.git`](https://github.com/m-alfan/test-serverside.git)
 
 ### Config Database
 -------------------
@@ -45,3 +50,7 @@ lakukan migrasi data ke database baru
 ```
 php yii migrate
 ```
+
+### Demo
+- [REST API](http://api.muhamadalfan.com/v1)
+- [Client](http://client.muhamadalfan.com)
