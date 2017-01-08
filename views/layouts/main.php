@@ -45,6 +45,12 @@ AppAsset::register($this);
                 ['label' => 'History Repository', 'url' => ['/repository-history/index']],
             ],
         ];
+        $itemMenus[] = ['label'  => 'S3 Aws', 'url' => '#',
+            'items'   => [
+                ['label' => 'Upload Image', 'url' => ['/site/upload-image']],
+                ['label' => 'List Image', 'url' => ['/site/list-image']],
+            ],
+        ];
         $itemMenus[] = ['label'  => 'Rest API ('.Yii::$app->user->identity->username.')', 'url' => '#',
             'items'   => [
                 ['label' => 'User', 'url' => ['/user/index']],
